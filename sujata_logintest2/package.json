@@ -1,12 +1,12 @@
 {
-  "name": "todo",
+  "name": "lendandlease",
   "version": "1.0.0",
-  "description": "to do api ",
+  "description": "Lend and Lease Application ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Sujata Tamang",
+  "author": "Group3",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.13.3",
