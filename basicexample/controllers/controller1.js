@@ -1,17 +1,14 @@
-/**
- * Created by Basel on 2/13/2017.
- */
 'use strict';
 
 angular.module('myApp.view1', ['ngRoute'])
 
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/view1', {
-            templateUrl: 'view1/view1.html',
-            controller: 'View1Ctrl'
+            templateUrl: '/views/view1.html',
+            controller: 'controller1'
         });
     }])
 
-    .controller('View1Ctrl', [function() {
+    .controller('controller1', [function() {
 
     }]);

@@ -1,6 +1,3 @@
-/**
- * Created by Basel on 2/13/2017.
- */
 'use strict';
 
 // Declare app level module which depends on views, and components
