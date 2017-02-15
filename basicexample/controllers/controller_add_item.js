@@ -20,13 +20,22 @@ angular.module('myApp.add_item', ['ngRoute'])
         };
 
         $scope.submit = function(){
+            /*
+            To use the temporary server POST request, we need 2 things:
+            1- Add the content-type: application/json header to the request
+            2- Send in the body, the data as JSON object
+            Also, the JSON file has to contain an array called items that has objects with name, desc, category keys
+            */
             $http({
                 method : "POST",
-                url : "http://localhost:3000",
+                url : "http://localhost:3000/items",
+                headers: {
+                    'Content-Type': "application/json"
+                },
                 data: {
-                    "itemName" : $scope.item.name,
-                    "itemDesc" : $scope.item.desc,
-                    "category" : $scope.item.category
+                    "name" : $scope.item.name,
+                    "desc" : $scope.item.desc,
+                    "category" : $scope.prop.value
                 }
             }).then(function mySucces(response) {
                 alert("done");
