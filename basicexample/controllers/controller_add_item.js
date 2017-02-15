@@ -13,10 +13,10 @@ angular.module('myApp.add_item', ['ngRoute'])
 
     .controller('controller_add_item', ['$scope', '$http', function($scope, $http) {
 
-        $scope.prop = {   "type": "select",
+        $scope.prop = {"type": "select",
             "name": "Service",
             "value": "Books",
-            "values": ['Books', 'Tools', 'Toothbrushes']
+            "values": ['Books', 'Tools', 'Games', 'Others']
         };
 
         $scope.submit = function(){

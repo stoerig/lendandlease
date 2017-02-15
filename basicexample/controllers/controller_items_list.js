@@ -14,17 +14,9 @@ angular.module('myApp.items_list', ['ngRoute'])
     .controller('controller_items_list', ['$scope', '$http', function($scope, $http) {
         $http({
             method : "GET",
-            url : "http://localhost:3000/items",
-            headers: {
-                'Content-Type': "application/json"
-            },
-            data: {
-                "name" : $scope.item.name,
-                "desc" : $scope.item.desc,
-                "category" : $scope.prop.value
-            }
+            url : "http://198.211.126.133:3000/items"
         }).then(function mySucces(response) {
-            alert("done");
+            $scope.items = response.data;
         }, function myError(response) {
             alert("Error");
         });

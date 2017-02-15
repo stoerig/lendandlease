@@ -1,9 +1,16 @@
 <form novalidate>
     <label for="itemName">Item Name</label>
-    <input type="text" name="itemName" id="itemName" value="Fill in the item Name" ng-model="item.name"><br>
+    <input type="text" name="itemName" id="itemName" value="Fill in the item Name" ng-model="item.name">
+    <br>
+    <br>
     <label for="itemDesc">Item Desc</label>
-    <input type="text" name="itemDesc" id="itemDesc" value="Fill in the item Desc" ng-model="item.desc"><br>
-
+    <textarea rows="4" cols="50"name="itemDesc" id="itemDesc" value="Fill in the item Desc" ng-model="item.desc"></textarea>
+    <br>
+    <br>
+    <label for="itemDesc">Item Desc</label>
+    <textarea rows="4" cols="50"name="itemDesc" id="itemDate" value="Fill in the item Desc" ng-model="item.desc"></textarea>
+    <br>
+    <br>
     <select ng-model="prop.value" ng-options="x for x in prop.values">
     </select>
 
